@@ -43,7 +43,6 @@ async function sendVerificationGate(
   const mention = mentionUserHtml(userId, userFirstName);
   const untilText = formatDateTime(new Date(untilDate * 1000));
   const text =
-    `<b><i>${chatTitle} Security Bot</i></b>\n\n` +
     `${mention} [${userId}] to be accepted in the group, please subscribe to our channel. ` +
     `Once joined, click the button below.\n\n` +
     `<b>Action:</b> Muted \u{1F507} until <b>${untilText}</b>.`;
